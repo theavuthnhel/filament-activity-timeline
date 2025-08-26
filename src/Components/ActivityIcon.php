@@ -12,7 +12,7 @@ class ActivityIcon extends IconEntry
 
     protected IconAnimation|string|Closure|null $animation = null;
 
-    protected string $view = 'activity-timeline::infolists.components.activity-icon';
+    protected string $view = 'filament-activity-timeline::infolists.components.activity-icon';
 
     public function animation(IconAnimation|string|Closure|null $animation): static
     {

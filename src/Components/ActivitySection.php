@@ -12,7 +12,7 @@ class ActivitySection extends Entry
 {
     use HasEmptyState;
 
-    protected string $view = 'activity-timeline::infolists.components.activity-section';
+    protected string $view = 'filament-activity-timeline::infolists.components.activity-section';
 
     protected string|Closure|null $description = null;
 

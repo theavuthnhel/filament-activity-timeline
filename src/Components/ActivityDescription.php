@@ -12,7 +12,7 @@ class ActivityDescription extends Entry
 
     protected string $viewIdentifier = 'activityDescription';
 
-    protected string $view = 'activity-timeline::infolists.components.activity-description';
+    protected string $view = 'filament-activity-timeline::infolists.components.activity-description';
 
     public function getViewIdentifier(): string
     {

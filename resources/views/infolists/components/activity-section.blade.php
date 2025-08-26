@@ -1,4 +1,4 @@
-<x-activity-timeline::section :aside="$isAside()" :extraAttributes="$getExtraAttributes()" :headingVisible="$isHeadingVisible()">
+<x-filament-activity-timeline::section :aside="$isAside()" :extraAttributes="$getExtraAttributes()" :headingVisible="$isHeadingVisible()">
     <x-slot name="heading">
         {{ $getLabel() ?? $getHeading() }}
     </x-slot>
@@ -87,6 +87,6 @@
 
         </div>
     @else
-        <x-activity-timeline::empty-state :description="$getEmptyStateDescription()" :heading="$getEmptyStateHeading()" :icon="$getEmptyStateIcon()" />
+        <x-filament-activity-timeline::empty-state :description="$getEmptyStateDescription()" :heading="$getEmptyStateHeading()" :icon="$getEmptyStateIcon()" />
     @endif
-</x-activity-timeline::section>
+</x-filament-activity-timeline::section>

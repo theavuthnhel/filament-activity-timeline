@@ -13,7 +13,7 @@ class ActivityDate extends Entry
 
     protected string $viewIdentifier = 'activityDate';
 
-    protected string $view = 'activity-timeline::infolists.components.activity-date';
+    protected string $view = 'filament-activity-timeline::infolists.components.activity-date';
 
     protected ?string $date = null;
 
