@@ -10,10 +10,10 @@
         "filament-infolists",
         "filamentphp"
     ],
-    "homepage": "https://github.com/jaocero/activity-timeline",
+    "homepage": "https://github.com/theavuthnhel/filament-activity-timeline",
     "support": {
-        "issues": "https://github.com/jaocero/activity-timeline/issues",
-        "source": "https://github.com/jaocero/activity-timeline"
+        "issues": "https://github.com/theavuthnhel/filament-activity-timeline/issues",
+        "source": "https://github.com/theavuthnhel/filament-activity-timeline"
     },
     "license": "MIT",
     "authors": [

@@ -1,4 +1,4 @@
-# Activity Timeline
+# Filament Activity Timeline
 
 <div class="filament-hidden">
     
@@ -9,7 +9,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/theavuthnhel/filament-activity-timeline.svg?style=flat-square)](https://packagist.org/packages/theavuthnhel/filament-activity-timeline)
 [![Total Downloads](https://img.shields.io/packagist/dt/theavuthnhel/filament-activity-timeline.svg?style=flat-square)](https://packagist.org/packages/theavuthnhel/filament-activity-timeline)
 
-Add timelines to custom pages or infolist entries effortlessly. Plus, it teams up smoothly with Spatie Activitylog for easy tracking.
+Add timelines to custom pages or infolist entries effortlessly. Plus, it teams up smoothly with Spatie Activitylog for easy tracking. Suportted filament ^4.x.
 
 ## Installation
 
@@ -87,7 +87,7 @@ public function activityTimelineInfolist(Infolist $infolist): Infolist
                         ->placeholder('No description is set')
                         ->allowHtml(),
                     ActivityDate::make('created_at')
-                        ->date('F j, Y', 'Asia/Manila')
+                        ->date('F j, Y', 'Asia/Phnom_Penh')
                         ->placeholder('No date is set.'),
                     ActivityIcon::make('status')
                         ->icon(fn (string | null $state): string | null => match ($state) {
@@ -359,7 +359,7 @@ Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
 Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
-
+-   [Theavuth Nhel](https://github.com/theavuthnhel)
 -   [Jay-Are Ocero](https://github.com/199ocero)
 -   [All Contributors](../../contributors)
 
