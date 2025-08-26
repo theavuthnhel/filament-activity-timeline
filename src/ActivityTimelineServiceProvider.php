@@ -14,9 +14,9 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class ActivityTimelineServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'activity-timeline';
+    public static string $name = 'filament-activity-timeline';
 
-    public static string $viewNamespace = 'activity-timeline';
+    public static string $viewNamespace = 'filament-activity-timeline';
 
     public function configurePackage(Package $package): void
     {
@@ -28,7 +28,7 @@ class ActivityTimelineServiceProvider extends PackageServiceProvider
         $package->name(static::$name)
             ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
-                $command->askToStarRepoOnGitHub('jaocero/activity-timeline');
+                $command->askToStarRepoOnGitHub('theavuthnhel/filament-activity-timeline');
             });
 
         if (file_exists($package->basePath('/../resources/views'))) {
@@ -57,7 +57,7 @@ class ActivityTimelineServiceProvider extends PackageServiceProvider
 
     protected function getAssetPackageName(): ?string
     {
-        return 'jaocero/activity-timeline';
+        return 'theavuthnhel/filament-activity-timeline';
     }
 
     /**
@@ -66,9 +66,9 @@ class ActivityTimelineServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            // AlpineComponent::make('activity-timeline', __DIR__ . '/../resources/dist/components/activity-timeline.js'),
-            // Css::make('activity-timeline-styles', __DIR__.'/../resources/dist/activity-timeline.css'),
-            // Js::make('activity-timeline-scripts', __DIR__.'/../resources/dist/activity-timeline.js'),
+            // AlpineComponent::make('filament-activity-timeline', __DIR__ . '/../resources/dist/components/filament-activity-timeline.js'),
+            // Css::make('filament-activity-timeline-styles', __DIR__.'/../resources/dist/filament-activity-timeline.css'),
+            // Js::make('filament-activity-timeline-scripts', __DIR__.'/../resources/dist/filament-activity-timeline.js'),
         ];
     }
 

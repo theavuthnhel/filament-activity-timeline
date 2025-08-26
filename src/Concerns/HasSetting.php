@@ -2,7 +2,7 @@
 
 namespace TheavuthNhel\ActivityTimeline\Concerns;
 
-use Filament\Infolists\Infolist;
+use Filament\Schemas\Schema;
 use Illuminate\Support\Collection;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
@@ -55,7 +55,7 @@ trait HasSetting
         ];
     }
 
-    public function activityInfolist(Infolist $infolist): Infolist
+    public function activityInfolist(Schema $schema): Schema
     {
         $activityTitle = $this->modifiedState()['activity_title']['modify_state'];
         $activityDescription = $this->modifiedState()['activity_description']['modify_state'];
@@ -72,7 +72,7 @@ trait HasSetting
             $activityDate = $this->configuration()['activity_date']['modify_state'];
         }
 
-        return $infolist
+        return $schema
             ->state([
                 'activities' => $this->getActivityLogRecord(),
             ])
